@@ -69,3 +69,12 @@ body {
   color: rgb(102, 102, 102);
   line-height: 2.3rem;
 }
+.icons {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  margin: auto;
+}
+.icons img {
+  width: 30px;
+}
