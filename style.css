@@ -137,7 +137,6 @@ footer {
   background: var(--accent-color);
   color: white;
   padding: 20px;
-  height: 300px;
 }
 
 footer h2 {
@@ -148,4 +147,17 @@ footer h2 {
 footer h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
+}
+footer p {
+  margin-bottom: 30px;
+}
+footer .icons {
+  margin: auto;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+
+footer .icons img {
+  width: 30px;
 }
