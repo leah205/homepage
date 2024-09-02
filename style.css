@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   font-family: "Raleway", "Courier New", Courier, monospace;
   --accent-color: rgb(94, 191, 94);
@@ -7,8 +12,16 @@
   src: url("./Raleway-Italic-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto/Roboto-Light.ttf");
+}
+
 body {
-  background: rgb(239, 239, 239);
+  background: rgb(243, 243, 243);
+}
+p {
+  font-family: "Roboto", "Courier New", Courier, monospace;
 }
 .portrait {
   object-fit: cover;
@@ -58,18 +71,22 @@ body {
   border-bottom: 150px solid transparent;
 }
 .about-me {
-  padding: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
 }
-.about-me h1 {
+.about-me h1,
+.your-work h1 {
   font-size: 2.5rem;
   text-align: center;
+  margin-bottom: 10px;
 }
 .about-me p {
   font-size: 1.5rem;
   color: rgb(102, 102, 102);
   line-height: 2.3rem;
+  margin-bottom: 10px;
 }
-.icons {
+.about-me .icons {
   display: flex;
   width: 150px;
   justify-content: space-between;
@@ -77,4 +94,58 @@ body {
 }
 .icons img {
   width: 30px;
+}
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.project-container > div {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.project img:first-of-type {
+  max-width: 100%;
+  margin-bottom: 0;
+}
+.project .description:first-of-type {
+  margin-top: -5px;
+  background: rgb(235, 235, 235);
+  color: grey;
+  padding: 15px;
+  height: 200px;
+  box-shadow: 1px 3px 8px rgb(176, 176, 176);
+}
+
+.project .description .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.project .icons {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+}
+.project .summary {
+  font-size: 1.2rem;
+}
+
+footer {
+  background: var(--accent-color);
+  color: white;
+  padding: 20px;
+  height: 300px;
+}
+
+footer h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+footer h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
