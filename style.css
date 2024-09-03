@@ -116,6 +116,10 @@ p {
   height: 400px;
   margin-bottom: 0;
 }
+.your-work {
+  width: 80vw;
+  margin: auto;
+}
 .project .description:first-of-type {
   margin-top: -5px;
   background: rgb(235, 235, 235);
@@ -228,7 +232,6 @@ footer .icons img {
   }
   .your-work h1 {
     text-align: left;
-    margin-left: 100px;
   }
   footer {
     padding: 100px;
