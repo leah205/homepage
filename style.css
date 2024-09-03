@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  box-sizing: bordered-box;
+  box-sizing: border-box;
 }
 :root {
   font-family: "Raleway", "Courier New", Courier, monospace;
@@ -99,16 +99,18 @@ p {
 }
 .project-container {
   display: flex;
-  justify-content: center;
+  gap: 50px;
+  margin: 50px;
   flex-wrap: wrap;
 }
-.project-container > div {
+.project {
   width: 300px;
   margin-bottom: 20px;
 }
 
-.project img:first-of-type {
-  max-width: 100%;
+.project .project-img {
+  width: 100%;
+  height: 400px;
   margin-bottom: 0;
 }
 .project .description:first-of-type {
@@ -121,8 +123,9 @@ p {
 }
 
 .project .description .top {
-  display: flex;
   justify-content: space-between;
+  display: flex;
+  height: 40px;
   margin-bottom: 20px;
 }
 
@@ -212,5 +215,8 @@ footer .icons img {
     left: 90%;
     font-size: 5rem;
     white-space: nowrap;
+  }
+  .project {
+    width: 500px;
   }
 }
