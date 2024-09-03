@@ -102,8 +102,9 @@ p {
 .project-container {
   display: flex;
   gap: 50px;
+  justify-content: center;
   width: 80vw;
-  margin: auto;
+  margin-bottom: 100px;
   flex-wrap: wrap;
 }
 .project {
