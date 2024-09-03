@@ -1,8 +1,7 @@
 * {
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: bordered-box;
 }
-
 :root {
   font-family: "Raleway", "Courier New", Courier, monospace;
   --accent-color: rgb(94, 191, 94);
@@ -23,6 +22,7 @@ body {
 p {
   font-family: "Roboto", "Courier New", Courier, monospace;
 }
+
 .portrait {
   object-fit: cover;
   width: 100%;
@@ -37,7 +37,7 @@ p {
   text-align: left;
   color: rgb(255, 255, 255);
   align-self: end;
-  width: 80%;
+  width: 300px;
   z-index: 2;
   font-size: 2.5rem;
   margin: 0;
@@ -47,8 +47,9 @@ p {
   position: relative;
   display: flex;
   margin: 30px;
+  max-width: 700px;
   margin-bottom: 0;
-  min-height: 300px;
+  height: 300px;
   box-shadow: 3px 3px 6px grey;
 }
 .background-shape div {
@@ -56,6 +57,7 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 .background-shape div:first-child {
   width: 100vw;
@@ -160,4 +162,55 @@ footer .icons {
 
 footer .icons img {
   width: 30px;
+}
+
+@media (min-width: 600px) {
+  .background-shape div:first-child {
+    height: 700px;
+  }
+  .background-shape div:nth-child(2) {
+    margin-top: 699px;
+    border-bottom: 500px solid transparent;
+  }
+  .about-me {
+    width: 80%;
+    margin: auto;
+    margin-top: 300px;
+    margin-bottom: 30px;
+    text-align: justify;
+    padding: 100px 50px;
+    box-shadow: 3px 3px 8px grey;
+    background: white;
+    z-index: 2;
+  }
+  .about-me p {
+    font-size: 2.5rem;
+  }
+  .about-me h2 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+  }
+  .about-me .icons {
+    display: none;
+  }
+  .header-modal {
+    height: 700px;
+    min-width: 500px;
+    margin-top: -200px;
+    float: left;
+    position: relative;
+  }
+  .header-modal picture {
+    position: static;
+    width: 100%;
+    height: 100;
+    object-fit: cover;
+  }
+  .header-modal h1 {
+    position: absolute;
+    top: 100px;
+    left: 90%;
+    font-size: 5rem;
+    white-space: nowrap;
+  }
 }
