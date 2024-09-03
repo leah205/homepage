@@ -2,6 +2,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*add image in footer*/
 :root {
   font-family: "Raleway", "Courier New", Courier, monospace;
   --accent-color: rgb(94, 191, 94);
@@ -35,17 +36,18 @@ p {
 
 .header-modal h1 {
   text-align: left;
+  width: 100%;
   color: rgb(255, 255, 255);
-  align-self: end;
-  width: 300px;
   z-index: 2;
   font-size: 2.5rem;
   margin: 0;
+  align-self: end;
   margin-left: 10px;
 }
 .header-modal {
   position: relative;
   display: flex;
+  justify-content: start;
   margin: 30px;
   max-width: 700px;
   margin-bottom: 0;
@@ -100,7 +102,8 @@ p {
 .project-container {
   display: flex;
   gap: 50px;
-  margin: 50px;
+  width: 80vw;
+  margin: auto;
   flex-wrap: wrap;
 }
 .project {
@@ -248,5 +251,17 @@ footer .icons img {
   }
   footer .icons img {
     width: 100px;
+  }
+}
+@media (min-width: 1500px) {
+  .header-modal {
+    min-width: 700px;
+    height: 800px;
+  }
+  .header-modal h1 {
+    position: static;
+  }
+  .about-me {
+    margin-bottom: 300px;
   }
 }
