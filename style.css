@@ -92,7 +92,7 @@ p {
 }
 .about-me .icons {
   display: flex;
-  width: 150px;
+  width: 80px;
   justify-content: space-between;
   margin: auto;
 }
@@ -170,7 +170,7 @@ footer p {
 footer .icons {
   margin: auto;
   display: flex;
-  width: 150px;
+  width: 80px;
   justify-content: space-between;
 }
 
@@ -253,7 +253,7 @@ footer .icons img {
     margin-bottom: 50px;
   }
   footer .icons {
-    width: 400px;
+    width: 250px;
     margin-left: 0;
   }
   footer .icons img {
