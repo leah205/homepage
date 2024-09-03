@@ -224,7 +224,8 @@ footer .icons img {
     width: 500px;
   }
   .your-work h1 {
-    text-align: center;
+    text-align: left;
+    margin-left: 100px;
   }
   footer {
     padding: 100px;
