@@ -22,6 +22,7 @@ body {
 }
 p {
   font-family: "Roboto", "Courier New", Courier, monospace;
+  line-height: 1.5;
 }
 
 .portrait {
@@ -87,7 +88,6 @@ p {
 .about-me p {
   font-size: 1.5rem;
   color: rgb(102, 102, 102);
-  line-height: 2.3rem;
   margin-bottom: 10px;
 }
 .about-me .icons {
