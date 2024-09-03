@@ -258,6 +258,12 @@ footer .icons img {
   }
 }
 @media (min-width: 1500px) {
+  .project {
+    width: 600px;
+  }
+  .project .project-img {
+    height: 500px;
+  }
   .header-modal {
     min-width: 700px;
     height: 800px;
